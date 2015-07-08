@@ -1,0 +1,271 @@
+/* Custom Stylesheet
+ * KVW Haelen en Nunhem
+ * Designed and developed by Jules Peeters
+ * All rights reserved
+ */
+
+/* GENERAL ELEMENTS
+ * ------------------------------------- */
+
+body {
+	border-width: 3px 0px 0px 0px;
+	border-style: solid;
+	border-color: #ec008c;
+	background-color: #eff0ea;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	height: 80px;
+	background: #FFF;
+	line-height: 80px;
+	-webkit-box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.45);
+	-moz-box-shadow:    0px 1px 10px 0px rgba(50, 50, 50, 0.45);
+	box-shadow:         0px 1px 10px 0px rgba(50, 50, 50, 0.45);
+	z-index: 200;
+}
+
+header img {
+	width: 160px;
+	vertical-align: middle;
+}
+
+
+
+
+@media (max-width: 900px) {
+	#toggleMenu {
+		position: relative;
+		display: inline;
+		float: right;
+		line-height: 90px;
+
+	}
+
+	#desktopMenu {
+		display: none;
+	}
+
+	#mobileMenu {
+		position: fixed;
+		background: white;
+		z-index: 50;
+		width: 100%;
+		border-width: 0px 0px 0px 0px;
+		border-style: solid;
+		border-color: #ec008c;
+		-webkit-box-shadow: inset 0px -9px 9px -5px rgba(50, 50, 50, 0.3);
+		-moz-box-shadow:    inset 0px -9px 9px -5px rgba(50, 50, 50, 0.3);
+		box-shadow:         inset 0px -9px 9px -5px rgba(50, 50, 50, 0.3);
+		border-width: 0px 0px 3px 0px;
+		border-style: solid;
+		border-color: #ec008c;
+
+	}
+
+	#mobileMenu ul {
+		position: relative;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 600;
+		font-size: 13px;
+		list-style-type: none;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	#mobileMenu li {
+		position: relative;
+		height: 30px;
+		line-height: 30px;
+		border-width: 0px 0px 1px 0px;
+		border-style: solid;
+		border-color: #ec008c;
+	}
+
+	#mobileMenu li .active {
+		color: #ec008c;
+	}
+}
+
+@media (min-width: 900px) {
+	.fa-bars {
+		display: none;
+	}
+
+	#mobileMenu {
+		display: none;
+	}
+
+	#desktopMenu ul {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 600;
+		font-size: 12px;
+
+		position: relative;
+		display: inline;
+		list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    float: right;
+	}
+
+	#desktopMenu li {
+		float: left;
+		padding-left: 20px;
+	}
+
+	#desktopMenu li .active {
+		color: #ec008c;
+	}
+
+	#desktopMenu li .highlight {
+		padding: 8px;
+		background-color: #ec008c;
+		color: #FFF;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ec008c;
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	height: 10px;
+	width: 100%;
+	padding-bottom: 40px;
+	background-color: #51aec0;
+}
+
+footer #seaPattern {
+	position: relative;
+	height: 13px;
+	background: url('../Images/seaPattern.png') 100% 13px repeat-x;
+	background-position: 0px 0px;
+	top: -13px;
+}
+
+footer #socialMedia {
+	position: absolute;
+	left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+	bottom: -3px;
+	background-color: #FFF;
+	height: 125px;
+	width: 250px;
+	border: 3px solid #ec008c;
+	-moz-border-radius: 250px 250px 0px 0px;
+	border-radius: 250px 250px 0px 0px;
+	-webkit-box-shadow: 0px -1px 10px 0px rgba(50, 50, 50, 0.45);
+	-moz-box-shadow:    0px -1px 10px 0px rgba(50, 50, 50, 0.45);
+	box-shadow:         0px -1px 10px 0px rgba(50, 50, 50, 0.45);
+}
+
+footer #socialMedia p {
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600 !important;
+	font-size: 18px;
+	text-align: center;
+	top: 30px;
+}
+
+/* Classes
+ * --------------	----------------------- */
+
+
+/* ID's
+ * ------------------------------------- */
+
+@media (min-width: 100px) {
+	#ship img {
+		display: none;
+	}
+}
+
+
+@media (min-width: 1000px) {
+	#ship img {
+		display: inline;
+		position: fixed;
+		margin-left: -220px;
+		width: 220px;
+		bottom: 30px;
+	}
+}
+
+#logo {
+	float: left;
+}
+
+#content {
+	margin-top: 30px;
+}
+
+#icons {
+	position: relative;
+	width: 100px;
+	margin: 0 auto;
+
+}
+
+#facebook {
+	background: url('../Images/facebook.png');
+	width: 44px;
+	height: 47px;
+	float: left;
+	margin: 3px;
+}
+
+#twitter {
+	background: url('../Images/twitter.png');
+	width: 44px;
+	height: 47px;
+	float: left;
+	margin: 3px;
+}
+
+#mobileMenu {
+	display: none;
+}
+
+#introText {
+	position: relative;
+	text-align: center;
+	margin-top: 25%;
+}
+
+#introText h5 {
+	font-size: 18px;
+	line-height: 15px;
+	font-weight: 500;
+	letter-spacing: 4px;
+	 top: 50%;
+}
+
+#introText h4 {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 92px;
+	color: #eab92d;
+	line-height: 75px;
+	text-shadow: 	0px 4px 3px rgba(0,0,0,0.4),
+             		0px 8px 13px rgba(0,0,0,0.1),
+             		0px 18px 23px rgba(0,0,0,0.1);
+
+	}
